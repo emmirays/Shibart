@@ -1,0 +1,89 @@
+.dropDown{
+      position: relative;
+}
+.dropDown .btn {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border: 2px solid #202025;
+  border-radius: 4px;
+}
+
+.dropDown .coin {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dropDown .coin .txt h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: var(--Neutral7);
+}
+.dropDown .coin .txt p {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #8c7662;
+}
+
+.content {
+  background: var(--White);
+  height: 159px;
+  overflow-y: scroll;
+  border-radius: 0 0 4px 4px;
+  position: absolute;
+  width: 100%;
+}
+
+.content .option {
+  cursor: pointer;
+  user-select: none;
+  padding: 16px 20px;
+  border-bottom: 1px solid #8c7662;
+}
+
+.content .option:nth-child(8){
+      border: 0;
+}
+
+.content .time {
+  font-size: 0.7rem;
+}
+
+.active {
+  background-color: rgba(71, 33, 154, 0.1);
+  box-shadow: -5px 0 0 #48219a;
+}
+
+.content .option:hover {
+  background-color: rgba(71, 33, 154, 0.05);
+  transition: all 0.2s;
+}
+
+.closed {
+  clip-path: polygon(-10% 0, 100% 0, 100% 0, -10% 0) !important;
+  height: 0;
+}
+
+.content {
+  clip-path: polygon(-10% 0, 100% 0, 100% 100%, 0 100%);
+  transition: clip-path 0.3s, height 0.3s;
+  transition-delay: height 0.3s;
+}
+
+.hClosed {
+  transform: rotate(-90deg);
+}
+
+.dropDown .btn img {
+  transition: transform 0.3s;
+}

@@ -1,0 +1,85 @@
+.arts {
+  padding: 80px 0;
+  background: #f1f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+.arts .head {
+  margin-bottom: 48px;
+}
+
+.arts .head h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 96px;
+  text-align: center;
+  color: #3c2c2d;
+  margin-bottom: 8px;
+}
+
+.arts .head p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #686a6c;
+}
+
+.arts .btn {
+  padding: 20px 32px;
+  gap: 8px;
+  width: 240px;
+  height: 64px;
+  background: #3c2c2d;
+  border-radius: 4px;
+  border: none;
+  margin-top: 48px;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #f7fbfa;
+  align-self: center;
+}
+
+@media (max-width: 1280px) {
+  .arts .head {
+    padding: 0 50px;
+  }
+
+  .arts .head h1 {
+    line-height: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .arts {
+    padding: 48px 0 64px;
+  }
+  .arts .head {
+    padding: 0 24px;
+    margin-bottom: 32px;
+  }
+  .arts .head h1 {
+    font-size: 48px;
+    text-align: left;
+    line-height: 56px;
+    margin-bottom: 32px;
+  }
+  .arts .head p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .arts .btn{
+    margin-top: 40px;
+  }
+}

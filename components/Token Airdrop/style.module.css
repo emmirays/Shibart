@@ -1,0 +1,94 @@
+.airdrop {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.airdrop .head {
+  width: 85%;
+  margin: 0 auto 64px;
+}
+
+.airdrop .head h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  color: #3c2c2d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.airdrop .head h1 > span {
+  color: #f29b4c;
+}
+
+.airdrop .head p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #686a6c;
+}
+
+.airdrop .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.airdrop .buynow {
+  width: 189px;
+  height: 60px;
+  background: #3c2c2d;
+  border-radius: 4px;
+  border: none;
+  align-self: center;
+  margin-top: 64px;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #f7fbfa;
+}
+
+@media (max-width: 1024px) {
+  .airdrop {
+    padding: 50px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .airdrop {
+    padding: 40px 24px;
+  }
+  .airdrop .head {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .airdrop .head h1 {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  .airdrop .head h1 > span {
+    color: #fe6768;
+  }
+  .airdrop .head p {
+    text-align: left;
+  }
+  .airdrop .cards {
+    flex-direction: column;
+  }
+  .airdrop .buynow {
+    margin-top: 32px;
+  }
+}

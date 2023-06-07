@@ -1,0 +1,128 @@
+.roadmap {
+  display: flex;
+}
+
+.roadmap .image {
+  background: #f8caa0;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  width: 50%;
+  height: inherit;
+}
+
+.roadmap .image .txt {
+  position: absolute;
+  left: 80px;
+  top: 128px;
+  z-index: 9999;
+}
+
+.roadmap .image .dog {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+}
+
+.roadmap .image .txt h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  color: #202025;
+  margin-bottom: 40px;
+}
+
+.roadmap .content {
+  width: 50%;
+  padding: 48px;
+  background: #f1f4f4;
+}
+
+.roadmap .content .block {
+  padding: 48px 0;
+  border-bottom: 1px solid #e1e2e2;
+}
+
+.roadmap .content .block:nth-child(1) {
+  padding-top: 0;
+}
+
+.roadmap .content .block:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+
+.roadmap .content .block .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.roadmap .content .block .head h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: #3c2c2d;
+}
+
+.roadmap .content .block .list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.roadmap .content .block .list li:last-child {
+  margin: 0;
+}
+
+.roadmap .content .block .list li span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #686a6c;
+}
+
+@media (max-width: 1024px) {
+  .roadmap .image .txt {
+    left: 42px;
+    top: 118px;
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmap {
+    flex-direction: column;
+  }
+  .roadmap .image {
+    width: 100%;
+  }
+  .roadmap .image .dog {
+    position: relative;
+  }
+  .roadmap .image .txt {
+    left: 24px;
+    top: 40px;
+  }
+  .roadmap .image .txt h1 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  .roadmap .image .txt img {
+    width: 117.33px;
+    height: 44px;
+  }
+  .roadmap .content {
+    width: 100%;
+    padding: 40px 24px;
+  }
+}

@@ -1,0 +1,159 @@
+.hero {
+  display: flex;
+  background: #f1f4f4;
+  flex-wrap: wrap;
+}
+
+.hero .img{
+  width: 50%;
+  height: inherit;
+  position: relative;
+}
+
+.hero .img .hero_img {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+}
+
+.hero .txt {
+  width: 50%;
+  height: inherit;
+  background: #f8caa0;
+  padding: 24px 48px;
+}
+
+.hero .txt::-webkit-scrollbar {
+  width: 10px;
+  background: var(--Neutral7);
+}
+
+.progress_con {
+  width: 100%;
+  height: 47px;
+  background: #8c7662;
+  border-radius: 4px;
+  margin-top: 24px;
+  display: flex;
+  position: relative;
+}
+
+.progress_con p {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #f7fbfa;
+}
+
+.progress_con .progress {
+  width: 80%;
+  height: 100%;
+  background: #3c2c2d;
+  border-radius: 4px;
+}
+
+.amount {
+  display: flex;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.amount .block {
+  width: 100%;
+}
+
+.amount .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.amount .head p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: #555555;
+}
+.amount .head .blk {
+  color: #3c2c2d;
+}
+
+.amount .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 12px;
+  height: 64px;
+  border: 2px solid #202025;
+  border-radius: 4px;
+}
+
+.amount .input input {
+  background: transparent;
+  width: 90%;
+  border: none;
+  outline: none;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #010101;
+}
+
+.amount .input input::placeholder{
+  color: #010101;
+}
+
+.connect_wallet {
+  padding: 20px 32px;
+  gap: 8px;
+  width: 100%;
+  height: 64px;
+  border: none;
+  outline: none;
+  background: #3c2c2d;
+  border-radius: 4px;
+  margin-top: 40px;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #f7fbfa;
+}
+
+@media (max-width: 768px) {
+  .hero{
+    flex-direction: column;
+  }
+  .hero .img{
+    width: 100%;
+  }
+  .hero .img .hero_img{
+    position: relative;
+  }
+  .hero .txt{
+    width: 100%;
+    padding: 24px;
+  }
+  .amount {
+    flex-direction: column;
+  }
+}
