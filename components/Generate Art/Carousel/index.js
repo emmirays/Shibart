@@ -14,6 +14,7 @@ export default function Carousel() {
             src={`/generate to earn section images/${path.image}.png`}
             width={330}
             height={330}
+            priority={true}
             alt=""
             quality={100}
           />

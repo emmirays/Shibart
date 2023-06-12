@@ -48,6 +48,7 @@ export default function ArtGallery() {
             width={330}
             height={330}
             quality={100}
+            priority={true}
             alt=""
           />,
         ])}

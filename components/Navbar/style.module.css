@@ -59,14 +59,103 @@
 @media (max-width: 768px) {
   .nav {
     width: 85%;
+    /* position: relative; */
   }
+
   .nav img {
     border: none;
   }
+
   .nav .links {
     display: none;
   }
+
   .nav .btn {
     display: flex;
+    position: relative;
+    z-index: 9999999;
+  }
+
+  .links.active {
+    width: 100%;
+    height: 100vh;
+    background: #010101;
+    display: flex;
+    gap: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: #e1e2e2;
+    padding: 0 24px;
+  }
+
+  .links.active a {
+    padding: 24px 0;
+    border-bottom: 1px solid #202025;
+    width: 100%;
+    text-transform: none;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #e1e2e2;
+  }
+
+  .links.active a:first-child {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(
+      to right,
+      #5fff5c,
+      #ffe249,
+      #f35950,
+      #7c5bff,
+      #1ce4ff,
+      #5fff5c,
+      #ffe249
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .links.active a:first-child::before {
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(
+      #5fff5c -18.66deg,
+      #ffe249 22.23deg,
+      #f35950 78.14deg,
+      #7c5bff 159deg,
+      #1ce4ff 202.32deg,
+      #5fff5c 341.34deg,
+      #ffe249 382.23deg
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: -1;
+  }
+
+  .links.active button {
+    width: 100%;
+    height: 60px;
+    background: white;
+    border: none;
+    align-self: center;
+    position: absolute;
+    bottom: 25px;
+    width: 90%;
   }
 }
