@@ -89,7 +89,7 @@ export default function Roadmap() {
         </div>
         <div className={styles.block}>
           <div className={styles.head}>
-            <h1>Already Done</h1>
+            <h1>Q3, 2023</h1>
             <svg
               width="32"
               height="32"
@@ -119,44 +119,50 @@ export default function Roadmap() {
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-                AI art generator - operational and connected to external GPUs
+              TGE
               </span>
             </li>
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-              Working platform
+              CEX listings (Aiming for Binance)
               </span>
             </li>
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-              User profiles
+              Chatbot Integrations
               </span>
             </li>
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-              Gallery
+              Staking platform live
               </span>
             </li>
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-              Rating system
+              Platform launch
               </span>
             </li>
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-              Comments, direct messaging, and comments system
+              Mint NFT Collections
+              </span>
+            </li>
+            <li>
+              <Image src="/point.svg" width={24} height={24} alt="" />
+              <span>
+              Continue to scale infrastructure
               </span>
             </li>
           </ul>
         </div>
         <div className={styles.block}>
           <div className={styles.head}>
-            <h1>Already Done</h1>
+            <h1>Q4, 2024</h1>
             <svg
               width="32"
               height="32"
@@ -186,37 +192,25 @@ export default function Roadmap() {
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-                AI art generator - operational and connected to external GPUs
+              Client-side software to harness distributed GPU power
               </span>
             </li>
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-              Working platform
+              Third party wallet for Miners
               </span>
             </li>
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-              User profiles
+              50,000 holders
               </span>
             </li>
             <li>
               <Image src="/point.svg" width={24} height={24} alt="" />
               <span>
-              Gallery
-              </span>
-            </li>
-            <li>
-              <Image src="/point.svg" width={24} height={24} alt="" />
-              <span>
-              Rating system
-              </span>
-            </li>
-            <li>
-              <Image src="/point.svg" width={24} height={24} alt="" />
-              <span>
-              Comments, direct messaging, and comments system
+              New roadmap announced
               </span>
             </li>
           </ul>

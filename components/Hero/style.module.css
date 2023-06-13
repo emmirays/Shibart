@@ -2,6 +2,7 @@
   display: flex;
   background: #f1f4f4;
   flex-wrap: wrap;
+  margin-top: 97px;
 }
 
 .hero .img{

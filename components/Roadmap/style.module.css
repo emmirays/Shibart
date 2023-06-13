@@ -15,7 +15,7 @@
   position: absolute;
   left: 80px;
   top: 128px;
-  z-index: 9999;
+  z-index: 9;
 }
 
 .roadmap .image .dog {

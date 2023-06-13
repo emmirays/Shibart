@@ -1,3 +1,10 @@
+.sticky{
+  background: #F7FBFA;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -25,6 +32,10 @@
   color: var(--Neutral7);
 }
 
+.nav .links a span:last-child {
+  display: none;
+}
+
 .nav .links button {
   width: 205px;
   height: 48px;
@@ -47,13 +58,18 @@
   flex-direction: column;
   gap: 6px;
   display: none;
+  width: 24px;
 }
 
 .nav .btn div {
-  width: 24px;
+  width: 100%;
   height: 3px;
   background: #3c2c2d;
   border-radius: 4px;
+}
+
+.nav .btn div:last-child {
+  width: 70%;
 }
 
 @media (max-width: 768px) {
@@ -67,7 +83,33 @@
   }
 
   .nav .links {
-    display: none;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #010101f2;
+    backdrop-filter: blur(26px);
+    gap: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: #e1e2e2;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav .links a {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav .links a span:last-child {
+    display: inline-block;
   }
 
   .nav .btn {
@@ -76,25 +118,8 @@
     z-index: 9999999;
   }
 
-  .links.active {
-    width: 100%;
-    height: 100vh;
-    background: #010101;
-    display: flex;
-    gap: 0;
-    align-items: flex-start;
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    color: #e1e2e2;
-    padding: 0 24px;
-  }
-
-  .links.active a {
-    padding: 24px 0;
+  .nav .links a {
+    padding: 24px;
     border-bottom: 1px solid #202025;
     width: 100%;
     text-transform: none;
@@ -106,11 +131,9 @@
     color: #e1e2e2;
   }
 
-  .links.active a:first-child {
+  .nav .links a:first-child span:first-child {
     position: relative;
-    font-size: 24px;
-    font-weight: bold;
-    display: inline-block;
+    font-weight: bolder;
     background: linear-gradient(
       to right,
       #5fff5c,
@@ -123,10 +146,9 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
 
-  .links.active a:first-child::before {
+  .nav .links a:first-child span:first-child:before {
     content: attr(data-content);
     position: absolute;
     top: 0;
@@ -144,11 +166,10 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
     z-index: -1;
   }
 
-  .links.active button {
+  .nav .links button {
     width: 100%;
     height: 60px;
     background: white;
@@ -157,5 +178,41 @@
     position: absolute;
     bottom: 25px;
     width: 90%;
+  }
+
+  .nav .btn div{
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* When Hamburger btn is clicked */
+  .nav .links.active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav .btn.active {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    right: 20px;
+    top: 48px;
+  }
+
+  .nav .btn.active div {
+    transition: all 0.3s ease-in-out;
+    background: #f7fbfa;
+  }
+
+  .nav .btn.active div:first-child {
+    transform: rotate(47deg);
+    position: absolute;
+  }
+
+  .nav .btn.active div:last-child {
+    transform: rotate(133deg);
+    position: absolute;
+    width: 100%;
   }
 }
