@@ -22,8 +22,7 @@ export default function Dropdown({ active, isOpen }) {
     <div className={styles.dropDown}>
       <div className={styles.btn} onClick={handleDropdown}>
         <div className={styles.coin}>
-          {/* <Image src="/usdt.svg" width={35} height={35} quality={100} priority={true} alt="" /> */}
-          <img src="/usdt.svg" alt="" />
+          <Image src="/usdt.svg" width={35} height={35} quality={100} priority={true} alt="" />
           <div className={styles.txt}>
             <h3>USDT</h3>
             <p>erc20</p>
