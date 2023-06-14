@@ -87,7 +87,7 @@
     width: 100%;
     height: 100vh;
     background: #010101f2;
-    backdrop-filter: blur(26px);
+    backdrop-filter: blur(10px);
     gap: 0;
     align-items: flex-start;
     flex-direction: column;
@@ -178,6 +178,7 @@
     position: absolute;
     bottom: 25px;
     width: 90%;
+    color: var(--Neutral7);
   }
 
   .nav .btn div{
