@@ -84,6 +84,6 @@
   transform: rotate(-90deg);
 }
 
-.dropDown .btn img {
+.dropDown .btn .arrow {
   transition: transform 0.3s;
 }

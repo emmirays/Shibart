@@ -30,7 +30,7 @@ export default function Dropdown({ active, isOpen }) {
         </div>
         <Image
           src="/chevron down.svg"
-          className={!open ? styles.hClosed : ""}
+          className={`${styles.arrow} ${!open ? styles.hClosed : ""}`}
           width={27}
           height={27}
           quality="100"
