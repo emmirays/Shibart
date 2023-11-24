@@ -9,7 +9,7 @@ export default function Airdrop() {
         <p>
           Help us reach our presale target and receive a huge $ART airdrop! The
           reward will be based on your cumulative referral amount. Follow these
-          steps to join:
+          steps to join
         </p>
       </div>
       <div className={styles.cards}>
